@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#1e3c72">
+
+<title>PENDAFTARAN SALUT LUNGGI SAMBAS 1</title>
+
+<link rel="stylesheet" href="daftar.css">
+
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+
+    <div class="nav-container">
+
+        <!-- LOGO -->
+        <div class="logo-box">
+
+            <img 
+            src="LOGO SALUT SAMBAS.png"
+            alt="Logo Kampus">
+
+            <div class="logo-text">
+
+                <span class="utama">
+                    Universitas Terbuka
+                </span>
+
+                <small>
+                    SALUT Lunggi Sambas 1
+                </small>
+
+            </div>
+
+        </div>
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+
+            <a href="index.html">
+                Beranda
+            </a>
+
+            <a href="#" class="active">
+                Pendaftaran
+            </a>
+
+            <a 
+            href="https://wa.me/6282353028096?text=Halo%20saya%20ingin%20bertanya%20tentang%20pendaftaran%20UT"
+            target="_blank">
+
+                Contact Person
+
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- ================= FORM ================= -->
+<section class="form-section">
+
+<div class="container">
+
+<h1>
+    Form Pendaftaran Mahasiswa
+</h1>
+
+<form id="formPendaftaran">
+
+<!-- ================= DATA DIRI ================= -->
+<div class="card">
+
+<h3>Data Diri</h3>
+
+<input 
+type="text"
+name="nama"
+placeholder="Nama Lengkap"
+autocomplete="name"
+required>
+
+<input 
+type="text"
+name="nik"
+placeholder="NIK"
+required>
+
+<div class="row">
+
+    <input 
+    type="text"
+    name="tempat"
+    placeholder="Tempat Lahir">
+
+    <input 
+    type="date"
+    name="tanggal">
+
+</div>
+
+<select name="jk">
+
+<option value="">
+Jenis Kelamin
+</option>
+
+<option value="Laki-laki">
+Laki-laki
+</option>
+
+<option value="Perempuan">
+Perempuan
+</option>
+
+</select>
+
+<input 
+type="email"
+name="email"
+placeholder="Email"
+autocomplete="email">
+
+<select name="agama">
+
+<option value="">
+Agama
+</option>
+
+<option value="Islam">
+Islam
+</option>
+
+<option value="Kristen">
+Kristen
+</option>
+
+<option value="Katolik">
+Katolik
+</option>
+
+<option value="Hindu">
+Hindu
+</option>
+
+<option value="Buddha">
+Buddha
+</option>
+
+<option value="Konghucu">
+Konghucu
+</option>
+
+<option value="Lainnya">
+Lainnya
+</option>
+
+</select>
+
+<input 
+type="tel"
+name="hp"
+placeholder="No HP"
+autocomplete="tel">
+
+<select name="status">
+
+<option value="">
+Status
+</option>
+
+<option value="Belum Menikah">
+Belum Menikah
+</option>
+
+<option value="Menikah">
+Menikah
+</option>
+
+</select>
+
+<input 
+type="text"
+name="ibu"
+placeholder="Nama Ibu Kandung">
+
+</div>
+
+<!-- ================= DATA ALAMAT ================= -->
+<div class="card">
+
+<h3>Data Alamat</h3>
+
+<textarea 
+name="alamat"
+placeholder="Alamat Rumah"></textarea>
+
+<input 
+type="text"
+name="kodepos"
+placeholder="Kode Pos">
+
+</div>
+
+<!-- ================= PENDIDIKAN ================= -->
+<div class="card">
+
+<h3>Pendidikan Terakhir</h3>
+
+<input 
+type="text"
+name="asalSekolah"
+placeholder="Asal Sekolah">
+
+<input 
+type="number"
+name="tahunLulus"
+placeholder="Tahun Lulus"
+min="1900"
+max="2099">
+
+</div>
+
+<!-- ================= JALUR ================= -->
+<div class="card">
+
+<h3>Jalur Pendaftaran</h3>
+
+<div class="radio-box">
+
+<!-- RPL -->
+<label class="radio-card">
+
+<input 
+type="radio"
+name="jalur"
+value="RPL">
+
+<div>
+
+<h4>RPL</h4>
+
+<p>
+Pengajuan pendaftaran RPL (Penyetaraan) dikenakan biaya Rp400.000.
+</p>
+
+</div>
+
+</label>
+
+<!-- RPL POLRI -->
+<label class="radio-card">
+
+<input 
+type="radio"
+name="jalur"
+value="RPL POLRI">
+
+<div>
+
+<h4>RPL POLRI</h4>
+
+<p>
+Pengajuan pendaftaran RPL jalur ijazah kepolisian.
+</p>
+
+</div>
+
+</label>
+
+<!-- RPL DESA -->
+<label class="radio-card">
+
+<input 
+type="radio"
+name="jalur"
+value="RPL PERANGKAT DESA">
+
+<div>
+
+<h4>RPL Perangkat Desa</h4>
+
+<p>
+Jalur pengakuan pengalaman kerja perangkat desa.
+</p>
+
+</div>
+
+</label>
+
+<!-- NON RPL -->
+<label class="radio-card">
+
+<input 
+type="radio"
+name="jalur"
+value="NON RPL">
+
+<div>
+
+<h4>NON RPL</h4>
+
+<p>
+Pendaftaran jalur reguler umum.
+</p>
+
+</div>
+
+</label>
+
+</div>
+
+</div>
+
+<!-- ================= JURUSAN ================= -->
+<div class="card">
+
+<h3>Pilih Jurusan</h3>
+
+<input 
+type="text"
+name="jurusan"
+list="listJurusan"
+placeholder="Cari atau pilih jurusan">
+
+<datalist id="listJurusan">
+
+<option value="S1 - Ilmu Administrasi Negara">
+<option value="S1 - Ilmu Administrasi Bisnis">
+<option value="S1 - Ilmu Hukum">
+<option value="S1 - Ilmu Pemerintahan">
+<option value="S1 - Ilmu Komunikasi">
+<option value="S1 - Ilmu Perpustakaan">
+<option value="S1 - Sosiologi">
+<option value="S1 - Sastra Inggris">
+<option value="S1 - Perpajakan">
+<option value="S1 - Statistika">
+<option value="S1 - Matematika">
+<option value="S1 - Biologi">
+<option value="S1 - Teknologi Pangan">
+<option value="S1 - Agribisnis">
+<option value="S1 - Sistem Informasi">
+<option value="S1 - Sains Data">
+<option value="S1 - Perencanaan Wilayah dan Kota">
+<option value="S1 - Manajemen">
+<option value="S1 - Ekonomi Pembangunan">
+<option value="S1 - Ekonomi Syariah">
+<option value="S1 - Akuntansi">
+<option value="S1 - Akuntansi Keuangan Publik">
+<option value="S1 - Pariwisata">
+<option value="S1 - Pendidikan Bahasa dan Sastra Indonesia">
+<option value="S1 - Pendidikan Bahasa Inggris">
+<option value="S1 - Pendidikan Biologi">
+<option value="S1 - Pendidikan Fisika">
+<option value="S1 - Pendidikan Kimia">
+<option value="S1 - Pendidikan Matematika">
+<option value="S1 - Pendidikan Ekonomi">
+<option value="S1 - Pendidikan Pancasila dan Kewarganegaraan">
+<option value="S1 - Teknologi Pendidikan">
+<option value="S1 - Pendidikan Agama Islam">
+<option value="S1 - Pendidikan Guru Sekolah Dasar (PGSD)">
+<option value="S1 - Pendidikan Guru Pendidikan Anak Usia Dini (PGPAUD)">
+<option value="D4 - Kearsipan">
+<option value="D3 - Perpajakan">
+
+</datalist>
+
+</div>
+
+<!-- ================= UPLOAD ================= -->
+<div class="card">
+
+<h3>Upload Berkas</h3>
+
+<label>Foto Diri</label>
+
+<input 
+type="file"
+id="foto_diri"
+accept="image/*">
+
+<img 
+id="preview_foto"
+class="preview">
+
+<label>Ijazah</label>
+
+<input 
+type="file"
+id="ijazah"
+accept=".pdf,application/pdf"
+required>
+
+<p class="info-file">
+File ijazah wajib format PDF
+</p>
+
+<label>Foto KTP</label>
+
+<input 
+type="file"
+id="ktp"
+accept="image/*">
+
+<img 
+id="preview_ktp"
+class="preview">
+
+</div>
+
+<!-- ================= BUTTON ================= -->
+<div class="btn-group">
+
+<button 
+type="reset"
+class="btn reset">
+
+Reset
+
+</button>
+
+<button 
+type="submit"
+class="btn submit">
+
+Daftar Sekarang
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+</section>
+
+<script src="daftar.js"></script>
+
+</body>
+</html>
