@@ -386,3 +386,22 @@ console.log(result);
     btn.disabled = false;
 
 });
+
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header');
+    const navbar = document.querySelectorAll('.navbar a');
+    const namaUniv = document.querySelector('.logo-text .utama');
+    const subUniv = document.querySelector('.logo-text small');
+
+    if (window.scrollY > 50) {
+        header.style.background = 'white';
+        navbar.forEach(a => a.style.color = '#1e3c72');
+        namaUniv.style.color = '#1e3c72';
+        subUniv.style.color = '#436b95';
+    } else {
+        header.style.background = 'rgba(255,255,255,0.1)';
+        navbar.forEach(a => a.style.color = 'white');
+        namaUniv.style.color = 'white';
+        subUniv.style.color = 'rgba(255,255,255,0.8)';
+    }
+});
