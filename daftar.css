@@ -5,37 +5,41 @@
     font-family:sans-serif;
 }
 
-body{
-    background:linear-gradient(135deg,#1e3c72,#2a5298);
-    overflow-x:hidden;
-    min-height:100vh;
-    position:relative;
+html {
+    overflow-x: clip;
+    width: 100%;
 }
 
-/* ================= EFFECT ================= */
+body {
+    background: linear-gradient(135deg,#1e3c72,#2a5298);
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
 body::before,
-body::after{
-    content:"";
-    position:absolute;
-    width:350px;
-    height:350px;
-    border-radius:50%;
-    filter:blur(120px);
-    z-index:0;
+body::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: 0;
 }
 
-body::before{
-    background:rgba(255,255,255,0.18);
-    top:-100px;
-    left:-100px;
+body::before {
+    background: rgba(255,255,255,0.18);
+    top: -80px;
+    left: -80px;
 }
 
-body::after{
-    background:rgba(255,255,255,0.12);
-    bottom:-100px;
-    right:-100px;
+body::after {
+    background: rgba(255,255,255,0.12);
+    bottom: -80px;
+    right: 0;
 }
-
 /* ================= HEADER ================= */
 .header{
     position:sticky;
