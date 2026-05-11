@@ -316,10 +316,11 @@ textarea:focus{
         justify-content:center;
         gap:14px;
     }
-
-    .logo-box{
-        flex-direction:column;
-        text-align:center;
+    
+   .logo-box{
+        flex-direction:row; /* ← ubah dari column ke row */
+        text-align:left;    /* ← ubah dari center ke left */
+        justify-content:center;
     }
 
     .logo-text .utama{
