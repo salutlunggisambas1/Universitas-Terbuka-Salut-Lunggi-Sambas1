@@ -5,8 +5,9 @@
     font-family:sans-serif;
 }
 
-html {
-    overflow-x: clip;
+.wrapper {
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
