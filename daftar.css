@@ -4,9 +4,6 @@
     box-sizing:border-box;
     font-family:sans-serif;
 }
-html {
-    scroll-behavior: smooth;
-}
 
 .wrapper {
     overflow-x: hidden;
@@ -19,6 +16,7 @@ body {
     min-height: 100vh;
     position: relative;
 }
+
 body {
     animation: fadeIn 0.5s ease;
 }
@@ -33,6 +31,7 @@ body {
         transform: translateY(0);
     }
 }
+
 body::before,
 body::after {
     content: "";
