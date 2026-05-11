@@ -51,7 +51,7 @@ body::after {
     z-index:999;
 
     background:rgba(255,255,255,0.1);
-    backdrop-filter:blur(12px);
+    /* backdrop-filter: blur(8px); ← komen/hapus dulu */
 
     padding:15px 5%;
 }
