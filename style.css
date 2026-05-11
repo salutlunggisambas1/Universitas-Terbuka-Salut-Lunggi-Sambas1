@@ -45,7 +45,7 @@ body::before{
 body::after{
     background:rgba(255,255,255,0.12);
     bottom:-100px;
-    right:-100px;
+     right: 0; 
 }
 
 /* ================= HEADER ================= */
