@@ -17,19 +17,19 @@ body {
     position: relative;
 }
 
-body {
-    animation: fadeIn 0.5s ease;
+body{
+    -webkit-animation:fadeIn 0.5s ease;
+    animation:fadeIn 0.5s ease;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+@-webkit-keyframes fadeIn{
+    from{ opacity:0; -webkit-transform:translateY(10px); }
+    to{ opacity:1; -webkit-transform:translateY(0); }
+}
+
+@keyframes fadeIn{
+    from{ opacity:0; transform:translateY(10px); }
+    to{ opacity:1; transform:translateY(0); }
 }
 
 body::before,
@@ -65,6 +65,8 @@ body::after {
     backdrop-filter: blur(8px); 
 
     padding:15px 5%;
+        -webkit-transition:all 0.3s ease;
+    transition:all 0.3s ease;
 }
 
 /* ================= NAV ================= */
@@ -101,6 +103,13 @@ body::after {
 
 .logo-text small{
     color:rgba(255,255,255,0.8);
+}
+
+.logo-main,
+.logo-sub,
+.navbar a{
+    -webkit-transition:all 0.3s ease;
+    transition:all 0.3s ease;
 }
 
 /* ================= NAVBAR ================= */
