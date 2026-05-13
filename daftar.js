@@ -412,3 +412,20 @@ window.addEventListener('scroll', function() {
         subUniv.style.color = 'rgba(255,255,255,0.8)';
     }
 });
+
+
+// =========================
+// AUTO UPPERCASE
+// =========================
+document
+.querySelectorAll("input:not([type='email']), textarea")
+.forEach(el => {
+
+    el.addEventListener("input", function(){
+
+        this.value =
+        this.value.toUpperCase();
+
+    });
+
+});
