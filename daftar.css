@@ -180,6 +180,7 @@ textarea{
     border-radius:10px;
     margin-bottom:12px;
     outline:none;
+    text-transform: uppercase;
 }
 
 textarea{
