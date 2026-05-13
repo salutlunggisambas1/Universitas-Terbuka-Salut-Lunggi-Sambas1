@@ -184,11 +184,18 @@ form.addEventListener(
 "submit",
 async function(e){
 
-    e.preventDefault();
+  e.preventDefault();
 
-    // VALIDASI
-    if(!validateForm()) return;
+const yakin = confirm(
+"Periksa kembali data Anda sebelum dikirim.\nPastikan semua data sudah benar."
+);
 
+if(!yakin){
+    return;
+}
+
+// VALIDASI
+if(!validateForm()) return;
 
     // =========================
     // AMBIL FILE
