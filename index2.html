@@ -101,12 +101,12 @@ required>
     <input 
     type="text"
     name="tempat"
-    placeholder="Tempat Lahir">
+    placeholder="Tempat Lahir" required>
 
     <input 
     type="text"
     name="tanggal"
-    placeholder="Tanggal Lahir (DD/MM/YYYY)">
+    placeholder="Tanggal Lahir (DD/MM/YYYY)" required>
 
 </div>
 
@@ -124,7 +124,7 @@ LAKI-LAKI
 PEREMPUAN
 </option>
 
-</select>
+</select required>
 
 <input 
 type="email"
@@ -166,7 +166,7 @@ KONGHUCU
 LAINNYA
 </option>
 
-</select>
+</select required>
 
 <input 
 type="tel"
@@ -188,12 +188,12 @@ BELUM MENIKAH
 MENIKAH
 </option>
 
-</select>
+</select required>
 
 <input 
 type="text"
 name="ibu"
-placeholder="Nama Ibu Kandung">
+placeholder="Nama Ibu Kandung" required>
 
 </div>
 
@@ -204,12 +204,12 @@ placeholder="Nama Ibu Kandung">
 
 <textarea 
 name="alamat"
-placeholder="Alamat Rumah"></textarea>
+placeholder="Alamat Rumah" required></textarea>
 
 <input 
 type="text"
 name="kodepos"
-placeholder="Kode Pos">
+placeholder="Kode Pos" required>
 
 </div>
 
@@ -221,14 +221,14 @@ placeholder="Kode Pos">
 <input 
 type="text"
 name="asalSekolah"
-placeholder="Asal Sekolah">
+placeholder="Asal Sekolah" required>
 
 <input 
 type="number"
 name="tahunLulus"
 placeholder="Tahun Lulus"
 min="1900"
-max="2099">
+max="2099" required>
 
 </div>
 
@@ -237,7 +237,7 @@ max="2099">
 
 <h3>Jalur Pendaftaran</h3>
 
-<div class="radio-box">
+<div class="radio-box" required>
 
 <!-- RPL -->
 <label class="radio-card">
@@ -321,7 +321,7 @@ Pendaftaran jalur NON RPL (Ijazah SLTA/Sederajat) mahasiswa dikenakan biaya Rp10
 
 </label>
 
-</div>
+</div >
 
 </div>
 
@@ -334,7 +334,7 @@ Pendaftaran jalur NON RPL (Ijazah SLTA/Sederajat) mahasiswa dikenakan biaya Rp10
 type="text"
 name="jurusan"
 list="listJurusan"
-placeholder="Cari atau pilih jurusan">
+placeholder="Cari atau pilih jurusan" required>
 
 <datalist id="listJurusan">
 
